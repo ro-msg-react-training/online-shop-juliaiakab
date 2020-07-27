@@ -1,9 +1,8 @@
 import React from 'react';
 import '../App.css';
-import Product from './Product'
+import Product from './Product';
 import { withStyles, createStyles, Theme, ThemeProvider } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
@@ -23,7 +22,8 @@ const MyCellType = withStyles((theme: Theme) =>
     head: {
       backgroundColor: theme.palette.primary.main,
       color: theme.palette.common.white,
-      fontSize: 18,
+      fontSize: 25,
+      fontStyle: 'bold',
     }
   }),
 )(TableCell);
@@ -31,24 +31,23 @@ const MyCellType = withStyles((theme: Theme) =>
 function Products(props: { products: any }) {
   const products = props.products;
   const productList = products.map((product: any, index: string) =>
-    <Product key={index} name={product.name} cathegory={product.cathegory} price={product.price} details={product.details} />
+    <Product key={index} id={product.id} name={product.name} category={product.category} price={product.price} details={product.details} />
   );
-
+  
   return (
     <ThemeProvider theme={myCustomTheme}>
+      <h1 className="Title2">Products</h1>
       <TableContainer>
       <Table aria-label="simple table" className='Custom-table'>
         <TableHead>
           <TableRow>
             <MyCellType align="left">Name</MyCellType>
-            <MyCellType align="left">Cathegory</MyCellType>
+            <MyCellType align="left">Category</MyCellType>
             <MyCellType align="left">Price</MyCellType>
             <MyCellType align="left">Details</MyCellType>
           </TableRow>
         </TableHead>
-        <TableBody>
-          {productList}
-        </TableBody>
+        {productList}
       </Table>
     </TableContainer>
   </ThemeProvider>
