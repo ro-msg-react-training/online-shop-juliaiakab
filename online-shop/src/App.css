@@ -2,55 +2,25 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-basic {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
 }
 
 .My-first-title {
-  padding-left: 5%;
+  padding-left: 15%;
   text-align: left;
   font-weight: bolder;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: azure;
 }
 
-.Single-product {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding-right: 70%;
-  height: 50px;
-  word-spacing: 5px;
-  color: aliceblue;
-}
-
-.Product-list {
-  padding-left: 15%;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-basic {
-  background-color: #282c34;
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Custom-table {
+  width: 85%!important;
+  margin: auto!important;
+  background-color: white;
 }

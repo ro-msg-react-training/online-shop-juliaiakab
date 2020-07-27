@@ -1,8 +1,16 @@
 import React from 'react';
-import '../App.css';
+import TableRow from '@material-ui/core/TableRow';
+import TableCell from '@material-ui/core/TableCell';
 
-function Product(props: { name: string; details: string; }) {
-    return <li className="Single-product">{props.name}'s details: {props.details}</li>;
+function Product(props: { name: string; cathegory: string, price: number, details: string; }) {
+    return (
+        <TableRow>
+            <TableCell align="left">{props.name}</TableCell>
+            <TableCell align="left">{props.cathegory}</TableCell>
+            <TableCell align="left">{props.price} RON</TableCell>
+            <TableCell align="left">{props.details}</TableCell>
+        </TableRow>
+    );
 }
 
 export default Product;
