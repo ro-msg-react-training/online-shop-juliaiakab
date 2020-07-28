@@ -1,0 +1,15 @@
+.ProductTable {
+    width: 85%!important;
+    margin: auto!important;
+    background-color: white;
+}
+  
+.ProductsTitle {
+    text-align: left;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    margin-left: 5%;
+    margin-right: 40%;
+    color: rgb(214, 86, 111);
+}

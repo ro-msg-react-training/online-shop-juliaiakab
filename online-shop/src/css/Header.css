@@ -1,0 +1,29 @@
+.AppHeader {
+    background-color: #343a44;;
+    padding-bottom: 40px;
+}
+
+.HeaderTitle{
+    text-align: left;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    margin-left: 5%;
+    color: crimson;
+}
+  
+.NavLink {
+    margin-left: 5%;
+    margin-top: 5%;
+    color: white;
+}
+
+nav {
+    padding-left: 5%;
+    text-align: left;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+}
+  
+  

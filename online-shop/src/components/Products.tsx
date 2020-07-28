@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../css/Products.css';
 import Product from './Product';
 import { withStyles, createStyles, Theme, ThemeProvider } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -30,15 +30,15 @@ const MyCellType = withStyles((theme: Theme) =>
 
 function Products(props: { products: any }) {
   const products = props.products;
-  const productList = products.map((product: any, index: string) =>
-    <Product key={index} id={product.id} name={product.name} category={product.category} price={product.price} details={product.details} />
+  const productList = products.map((product: any) =>
+    <Product key={product.id} id={product.id} name={product.name} category={product.category} price={product.price} details={product.details} />
   );
   
   return (
     <ThemeProvider theme={myCustomTheme}>
-      <h1 className="Title2">Products</h1>
+      <h1 className="ProductsTitle">Products</h1>
       <TableContainer>
-      <Table aria-label="simple table" className='Custom-table'>
+      <Table aria-label="simple table" className='ProductTable'>
         <TableHead>
           <TableRow>
             <MyCellType align="left">Name</MyCellType>
