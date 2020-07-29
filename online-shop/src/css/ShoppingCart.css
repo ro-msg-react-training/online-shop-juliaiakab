@@ -1,0 +1,38 @@
+.CheckoutButton {
+    margin-top: 1cm!important;
+    min-width: 5cm!important;
+    max-width: 5cm;
+    min-height: 2cm;
+    max-height: 2cm;
+}
+
+.CartTable {
+    width: 85%!important;
+    margin: auto!important;
+    background-color: white;
+}
+  
+.CartHeader {
+    display: flex;
+    position: relative;
+    justify-content: left;
+}
+
+.CartTitle {
+    text-align: left;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    margin-left: 5%;
+    max-width: 37cm;
+    min-width: 37cm;
+    color: rgb(214, 86, 111);
+}
+
+.OrderMessage {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5cm;
+    text-align: left;
+    padding-left: 10%;
+}

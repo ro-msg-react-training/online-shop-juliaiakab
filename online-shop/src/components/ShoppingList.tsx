@@ -1,0 +1,3 @@
+let shoppingList = [{productId: "1", productName: "Product1", productCategory: "Category1", productPrice: 1, quantity: 2}, {productId: "2", productName: "Product2", productCategory: "Category2", productPrice: 2,  quantity: 1}, {productId: "3", productName: "Product3", productCategory: "Category3", productPrice: 3, quantity: 1} , {productId: "4", productName: "Product4", productCategory: "Category4", productPrice: 4, quantity: 2}];
+
+export default shoppingList;
