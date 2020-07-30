@@ -1,0 +1,3 @@
+const products = [{id: "1", name: "Product1", category: "Category1", price: 1, description: "description about the first product"}, {id: "2", name: "Product2", category: "Category2", price: 2,  description: "description about the second product"}, {id: "3", name: "Product3", category: "Category3", price: 3, description: "description about the third product"} , {id: "4", name: "Product4", category: "Category4", price: 4, description: "description about the fourth product"}];
+
+export default products;
